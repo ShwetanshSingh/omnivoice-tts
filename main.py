@@ -13,7 +13,6 @@ def main():
     # Generate audio
     audio = model.generate(
         text="Hello, this is a test of zero-shot voice cloning.",
-        ref_audio="ref.wav",
         ref_text="Transcription of the reference audio.",
     )  # audio is a list of `np.ndarray` with shape (T,) at 24 kHz.
 
