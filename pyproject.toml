@@ -6,4 +6,18 @@ readme = "README.md"
 requires-python = ">=3.11"
 dependencies = [
     "omnivoice>=0.1.4",
+    "torch",
+    "torchvision",
+    "torchaudio",
+    "soundfile",
 ]
+
+[[tool.uv.index]]
+name = "pytorch"
+url = "https://download.pytorch.org/whl/cu121"
+explicit = true
+
+[tool.uv.sources]
+torch = { index = "pytorch" }
+torchvision = { index = "pytorch" }
+torchaudio = { index = "pytorch" }
