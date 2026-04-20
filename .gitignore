@@ -11,3 +11,4 @@ wheels/
 
 # Audio files
 *.wav
+*.ogg
