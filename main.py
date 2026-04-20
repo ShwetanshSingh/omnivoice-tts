@@ -12,7 +12,7 @@ def main():
 
     # Generate audio
     audio = model.generate(
-        text="Hello, this is a test of zero-shot voice cloning.",
+        text="Google इनपुट उपकरण आपके द्वारा चुनी गई भाषा में वेब पर कहीं भी लिखना आसान बनाता है. और जानें| इसे आज़माने के लिए, नीचे अपनी भाषा और इनपुट उपकरण चुनें और लिखना आरंभ करें.",
         ref_text="Transcription of the reference audio.",
     )  # audio is a list of `np.ndarray` with shape (T,) at 24 kHz.
 
