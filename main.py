@@ -13,7 +13,8 @@ def main():
     # Generate audio
     audio = model.generate(
         text="Google इनपुट उपकरण आपके द्वारा चुनी गई भाषा में वेब पर कहीं भी लिखना आसान बनाता है. और जानें| इसे आज़माने के लिए, नीचे अपनी भाषा और इनपुट उपकरण चुनें और लिखना आरंभ करें.",
-        ref_text="Transcription of the reference audio.",
+        ref_audio="ref.wav",
+        ref_text="मुझे यह कहना है कि हमने जो अभी सारी जानकारी दी है इनको, क्या यह जानकारी सही है या गलत यह जानने के लिए हम क्या करें?",
     )  # audio is a list of `np.ndarray` with shape (T,) at 24 kHz.
 
     sf.write("out.wav", audio[0], 24000)
